@@ -2,7 +2,7 @@ import { Model } from '@/base/model';
 
 export class Shift extends Model {
   constructor(
-    public id?: number,
+    public id: number,
     public timeStart?: Date,
     public timeEnd?: Date
   ) {

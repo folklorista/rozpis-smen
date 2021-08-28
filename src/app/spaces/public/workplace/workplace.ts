@@ -1,7 +1,7 @@
 import { Model } from '@/base/model';
 
 export class Workplace extends Model {
-  constructor(public id?: number, public name?: string) {
+  constructor(public id: number, public name?: string) {
     super(id);
   }
 }

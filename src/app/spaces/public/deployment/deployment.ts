@@ -5,7 +5,7 @@ import { Shift } from '@/spaces/public/shift/shift';
 
 export class Deployment extends Model {
   constructor(
-    public id?: number,
+    public id: number,
     public idEmployee?: number,
     public idWorkplace?: number,
     public idShift?: number,
