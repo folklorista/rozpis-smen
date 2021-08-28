@@ -1,6 +1,7 @@
 # Plánovač rozpisu směn
 
 ## Modely
+
 - Zaměstnanci, úvazky
 - Pracovní místa (pracoviště, pracovní stanice)
 - Způsobilost - zaměstnanec na pracovním místě
@@ -9,6 +10,7 @@
 - Požadavky, omezení
 
 ## Funkce
+
 - primární:
   - měsíční přehled
   - týdenní přehled
@@ -22,11 +24,13 @@
   - export do e-mailu
 
 ## Kriteria
+
 - splneni dne, měsíce
   - minimální a maximální obsazenost pracovišť
   - maximální vytížení zaměstnance
 
 ## Typicke pozadavky:
+
 - (Ne)chci slouzit v pondelky
 - Nechci min/vic jak dve sluzby
 - (Ne)chci slouzit s manzelem
@@ -36,6 +40,7 @@
 ## Etapy vyvoje:
 
 ### I. fáze
+
 - návrh modelu
 - denní pohled
 - obsazení směn zaměstnanci
@@ -44,6 +49,7 @@
 - jednoduchá upozornění na splnění kritérií
 
 ### II. fáze
+
 - správa entit
 - týdenní a měsíční pohled
 - automatické plánování, předobsazení
@@ -52,6 +58,7 @@
 - strukturované kontroly na požadavky
 
 ## poznámky
+
 - Pocet pracovist se muze menit
 - Planovana udrzba
 - Standardni smeny, sluzby
