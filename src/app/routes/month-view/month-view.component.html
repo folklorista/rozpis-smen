@@ -1,0 +1,53 @@
+<table>
+  <thead>
+    <tr>
+      <th>10/2021</th>
+      <th *ngFor="let workplace of workplaces" [title]="workplace.id">
+        {{ workplace.name }}
+      </th>
+      <th>nepřiřazeno</th>
+    </tr>
+  </thead>
+  <tbody>
+    <app-month-view-row
+      *ngFor="let shift of shifts"
+      [shift]="shift"
+      [workplaces]="workplaces"
+      [employees]="employees"
+    ></app-month-view-row>
+    <!--tr *ngFor="let shift of [shifts[0]]">
+      <td>{{ shift.date | date }}</td>
+      <td *ngFor="let workplace of workplaces">
+        <ul
+          *ngFor="let item of [getShiftItem(shift, workplace)]"
+          #listOne
+          cdkDropList
+          [cdkDropListData]="item.idEmployees"
+          cdkDropListSortingDisabled
+          (cdkDropListDropped)="assignEmployee($event)"
+          class="shiftItem"
+          [class.shiftItem-capacity]="!!workplace.capacity"
+        >
+          <li
+            *ngFor="let idEmployee of item.idEmployees"
+            class="employee"
+            cdkDrag
+          >
+            {{ getEmployeeById(idEmployee).name }}
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul class="example-list">
+          <li
+            *ngFor="let employee of getUnassignedEmployees(shift)"
+            class="employee"
+            cdkDrag
+          >
+            {{ employee.name }}
+          </li>
+        </ul>
+      </td>
+    </tr-->
+  </tbody>
+</table>

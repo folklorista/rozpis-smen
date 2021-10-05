@@ -1,5 +1,6 @@
 import { LayoutComponent } from '@/layout/layout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MonthViewComponent } from './month-view/month-view.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { Error500Component } from './pages/error500/error500.component';
 
@@ -8,7 +9,9 @@ export const routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: DashboardComponent },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'month', component: MonthViewComponent },
       {
         path: 'app',
         loadChildren: () =>
